@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { debug } from 'util';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,25 +27,25 @@ export class AppComponent {
         const current_value = arraySolution[i][j];
         if (current_value) {
           // Check the line
-          for (let x2 = 0; x2 < 9; x2++) {
-              if (x2 != j && arraySolution[i][x2] == current_value) {
+          for (let x = 0; x < 9; x++) {
+              if (x != j && arraySolution[i][x] == current_value) {
                 console.error('ERROR => Check The Line')
                   return false;
             } 
           }
           // Check the Column
-          for(let y2 = 0; y2 < 9; y2++){
-            if(y2 != i && arraySolution[y2][j] == current_value){ 
+          for(let y = 0; y < 9; y++){
+            if(y != i && arraySolution[y][j] == current_value){ 
               console.error('ERROR => Check The Column')
               return false
             }
           }
           // let startY = Math.floor(i / 3);
           // console.log(startY)
-          // for (let y2 = startY; y2 < startY + 3; y2++){
+          // for (let y = startY; y < startY + 3; y++){
           //   let startX = Math.floor(j / 3);
-          //   for(let x2 = startX; x2 < startX + 3; x2++){
-          //       if((x2 != i || y2 != i) && arraySolution[y2][x2] == current_value){
+          //   for(let x = startX; x < startX + 3; x++){
+          //       if((x != i || y != i) && arraySolution[y][x] == current_value){
           //         console.error('shecdoma')
           //       }
           //   }
