@@ -12,14 +12,15 @@ export class AppComponent {
     const x = 0;
     const arraySolution = [
     [6, x, 4, 5, x, 3, x, 7, x],
-    [x, x, x, x, x, x, 3, 1, x],
-    [3, 5, x, x, x, 9, 2, x, x],
-    [x, x, x, x, 2, x, 9, 3, 7],
-    [x, x, 9, x, x, x, 4, x, 8],
-    [4, 7, 2, x, x, x, x, x, x],
-    [x, x, 1, x, x, x, x, 5, 2],
-    [x, 4, 5, x, x, x, x, x, x],
-    [x, 6, x, 8, x, 1, 7, x, x]
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    [6, x, 4, 5, x, 3, x, 7, x],
+    
     ];
 
     for (let i = 0; i < 9; i++) {
